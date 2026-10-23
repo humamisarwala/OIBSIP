@@ -1,1 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Photography — Editorial Wedding & Portrait Stories</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0d0d0d',
+                            charcoal: '#141414',
+                            card: '#1a1a1a',
+                            gold: '#d4af37',
+                            muted: '#9ca3af'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Custom smooth styling enhancements */
+        body {
+            background-color: #0d0d0d;
+            color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+        }
+        .serif-font {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-[#0d0d0d] text-gray-100 antialiased selection:bg-stone-700 selection:text-white">
 
+    <!-- Sticky Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0d0d0d]/80 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center transition-colors group-hover:border-white">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="3" x2="12" y2="6"></line>
+                        <line x1="12" y1="18" x2="12" y2="21"></line>
+                        <line x1="3" y1="12" x2="6" y2="12"></line>
+                        <line x1="18" y1="12" x2="21" y2="12"></line>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="serif-font tracking-[0.2em] text-lg font-semibold uppercase leading-none">Focus</span>
+                    <span class="text-[9px] tracking-[0.35em] text-gray-400 uppercase mt-1">Photography</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-10">
+                <a href="#work" class="text-xs uppercase tracking-[0.25em] text-gray-300 hover:text-white transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full after:transition-all">Work</a>
+                <a href="#about" class="text-xs uppercase tracking-[0.25em] text-gray-300 hover:text-white transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full after:transition-all">About</a>
+                <a href="#stories" class="text-xs uppercase tracking-[0.25em] text-gray-300 hover:text-white transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full after:transition-all">Stories</a>
+                <a href="#contact" class="text-xs uppercase tracking-[0.25em] text-gray-300 hover:text-white transition-colors py-2 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-white hover:after:w-full after:transition-all">Contact</a>
+            </nav>
+
+            <!-- Call to Action -->
+            <div class="flex items-center space-x-6">
+                <a href="#contact" class="hidden sm:inline-flex items-center space-x-2 text-xs uppercase tracking-[0.2em] font-medium text-white hover:text-gray-300 transition-colors group">
+                    <span>Let's Talk</span>
+                    <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path></svg>
+                </a>
+                
+                <!-- Mobile menu toggle button placeholder / simple anchor -->
+                <a href="#contact" class="md:hidden text-xs uppercase tracking-widest px-4 py-2 border border-white/20 rounded-full">Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen hero-bg flex items-center justify-center px-6 pt-24 pb-16 overflow-hidden">
+        <div class="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            
+            <div class="lg:col-span-10 xl:col-span-9 flex flex-col items-start justify-center">
+                <div class="flex items-center space-x-3 mb-6">
+                    <span class="h-[1px] w-12 bg-white/50"></span>
+                    <span class="text-[11px] uppercase tracking-[0.3em] text-gray-300 font-medium">Honest Moments • Artfully Held</span>
+                </div>
+                
+                <h1 class="serif-font text-5xl sm:text-7xl lg:text-8xl font-light italic leading-[1.05] tracking-tight text-white mb-8">
+                    Feel it all over again.
+                </h1>
+
+                <p class="text-sm sm:text-base text-gray-300 max-w-lg font-light leading-relaxed mb-10">
+                    Soulful, cinematic photography crafted for the wildly in love, preserving raw emotions and unscripted authentic stories across the globe.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-5 w-full sm:w-auto">
+                    <a href="#work" class="inline-flex items-center justify-center px-8 py-4 bg-white text-black text-xs uppercase tracking-[0.25em] font-semibold hover:bg-gray-200 transition-all rounded-sm shadow-lg">
+                        Explore Portfolio
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white text-xs uppercase tracking-[0.25em] font-medium hover:bg-white/10 transition-all rounded-sm">
+                        Book a Session
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right vertical badge element resembling screenshot -->
+            <div class="hidden lg:flex lg:col-span-2 justify-end">
+                <div class="transform rotate-95 text-[10px] tracking-[0.4em] text-gray-400 uppercase whitespace-nowrap">
+                    Available Worldwide • 2025 / 26
+                </div>
+            </div>
+        </div>
+
+        <!-- Subtle Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-2 opacity-70 hover:opacity-100 transition-opacity">
+            <span class="text-[9px] uppercase tracking-[0.3em] text-gray-400">Scroll</span>
+            <div class="w-[1px] h-8 bg-gradient-to-b from-white to-transparent animate-pulse"></div>
+        </div>
+    </section>
+
+    <!-- Content Section 1: Featured Portfolio Gallery -->
+    <section id="work" class="py-28 px-6 bg-[#111111] border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-[11px] uppercase tracking-[0.3em] text-gray-400 block mb-3">Curated Collections</span>
+                    <h2 class="serif-font text-4xl sm:text-5xl font-light text-white">Selected Stories</h2>
+                </div>
+                <p class="text-gray-400 text-sm max-w-sm mt-4 md:mt-0 font-light leading-relaxed">
+                    A visual archive of intimate weddings, elopements, and documentary lifestyle sessions captured with emotional depth.
+                </p>
+            </div>
+
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Portfolio Item 1 -->
+                <div class="group relative overflow-hidden bg-zinc-900 rounded-sm aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1000&q=80" alt="Wedding couple" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 flex flex-col justify-end p-8">
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-gray-300 mb-2">Tuscany, Italy</span>
+                        <h3 class="serif-font text-2xl font-light text-white">Elena & Matteo</h3>
+                        <span class="text-xs text-gray-400 mt-1">Destination Wedding</span>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="group relative overflow-hidden bg-zinc-900 rounded-sm aspect-[4/5] md:translate-y-8">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=80" alt="Elopement ceremony" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 flex flex-col justify-end p-8">
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-gray-300 mb-2">Big Sur, California</span>
+                        <h3 class="serif-font text-2xl font-light text-white">Clara & Liam</h3>
+                        <span class="text-xs text-gray-400 mt-1">Cliffside Elopement</span>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="group relative overflow-hidden bg-zinc-900 rounded-sm aspect-[4/5]">
+                    <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1000&q=80" alt="Intimate portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 flex flex-col justify-end p-8">
+                        <span class="text-[10px] uppercase tracking-[0.25em] text-gray-300 mb-2">Paris, France</span>
+                        <h3 class="serif-font text-2xl font-light text-white">Sophie & Julian</h3>
+                        <span class="text-xs text-gray-400 mt-1">Editorial Portraiture</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section 2: About & Approach -->
+    <section id="about" class="py-28 px-6 bg-[#0d0d0d] relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            
+            <div class="lg:col-span-6">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1000&q=80" alt="Photographer at work" class="w-full aspect-[4/5] object-cover rounded-sm shadow-2xl filter grayscale contrast-125">
+                    <div class="absolute -bottom-6 -right-6 bg-zinc-900 border border-white/10 p-8 max-w-xs hidden sm:block">
+                        <p class="serif-font text-xl italic text-gray-200">"We don't just take pictures; we capture the feeling of the room when no one is watching."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 flex flex-col items-start justify-center">
+                <span class="text-[11px] uppercase tracking-[0.3em] text-gray-400 block mb-3">Our Philosophy</span>
+                <h2 class="serif-font text-4xl sm:text-5xl font-light text-white mb-6">Documenting Truth Over Perfection</h2>
+                <p class="text-gray-300 text-sm sm:text-base font-light leading-relaxed mb-6">
+                    Focus Photography was founded on the belief that real moments hold more beauty than staged perfection. We lean into warm natural light, authentic laughter, tearful embraces, and the quiet glances that define true connection.
+                </p>
+                <p class="text-gray-400 text-sm font-light leading-relaxed mb-8">
+                    Whether you are exchanging vows on a rugged coastline or hosting an intimate dinner in a European courtyard, our approach is calm, unobtrusive, and deeply intentional.
+                </p>
+
+                <div class="grid grid-cols-2 gap-8 w-full border-t border-white/10 pt-8">
+                    <div>
+                        <span class="serif-font text-3xl text-white block mb-1">10+</span>
+                        <span class="text-xs uppercase tracking-wider text-gray-400">Years Experience</span>
+                    </div>
+                    <div>
+                        <span class="serif-font text-3xl text-white block mb-1">250+</span>
+                        <span class="text-xs uppercase tracking-wider text-gray-400">Stories Captured</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Content Section 3: Stories & Testimonials -->
+    <section id="stories" class="py-28 px-6 bg-[#141414] border-t border-white/5">
+        <div class="max-w-5xl mx-auto text-center">
+            
+            <span class="text-[11px] uppercase tracking-[0.3em] text-gray-400 block mb-3">Kind Words</span>
+            <h2 class="serif-font text-4xl sm:text-5xl font-light text-white mb-16">Words from Our Couples</h2>
+
+            <div class="relative bg-zinc-900/50 border border-white/10 p-8 sm:p-14 rounded-sm">
+                <svg class="w-10 h-10 text-white/20 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <p class="serif-font text-2xl sm:text-3xl italic text-gray-100 font-light leading-relaxed mb-8">
+                    "Looking through our gallery felt like reliving every single heartbeat of our wedding day. Focus Photography captured the soul of our celebration in a way we never could have imagined."
+                </p>
+                <div class="flex flex-col items-center">
+                    <span class="text-xs uppercase tracking-[0.25em] font-medium text-white">Victoria & Jonathan</span>
+                    <span class="text-[11px] text-gray-400 mt-1">Lake Como Wedding</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact / Booking Section -->
+    <section id="contact" class="py-28 px-6 bg-[#0d0d0d] border-t border-white/5">
+        <div class="max-w-3xl mx-auto text-center">
+            
+            <span class="text-[11px] uppercase tracking-[0.3em] text-gray-400 block mb-3">Inquiries</span>
+            <h2 class="serif-font text-4xl sm:text-5xl font-light text-white mb-6">Let's Create Together</h2>
+            <p class="text-gray-300 text-sm font-light mb-12 max-w-lg mx-auto leading-relaxed">
+                We are currently booking worldwide assignments for 2025 and 2026. Reach out to check availability and discuss your vision.
+            </p>
+
+            <form class="space-y-6 text-left max-w-2xl mx-auto bg-zinc-900/30 p-8 sm:p-12 border border-white/10 rounded-sm" onsubmit="event.preventDefault(); alert('Thank you for your inquiry! We will be in touch shortly.');">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-[0.25em] text-gray-400 mb-2">Your Name</label>
+                        <input type="text" required class="w-full bg-zinc-900 border border-white/20 p-3 text-sm text-white focus:outline-none focus:border-white transition-colors rounded-sm" placeholder="Jane Doe">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-[0.25em] text-gray-400 mb-2">Email Address</label>
+                        <input type="email" required class="w-full bg-zinc-900 border border-white/20 p-3 text-sm text-white focus:outline-none focus:border-white transition-colors rounded-sm" placeholder="jane@example.com">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-[0.25em] text-gray-400 mb-2">Event Date</label>
+                        <input type="date" class="w-full bg-zinc-900 border border-white/20 p-3 text-sm text-white focus:outline-none focus:border-white transition-colors rounded-sm">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] uppercase tracking-[0.25em] text-gray-400 mb-2">Location / Venue</label>
+                        <input type="text" class="w-full bg-zinc-900 border border-white/20 p-3 text-sm text-white focus:outline-none focus:border-white transition-colors rounded-sm" placeholder="Florence, Italy">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-[10px] uppercase tracking-[0.25em] text-gray-400 mb-2">Tell Us About Your Vision</label>
+                    <textarea rows="4" class="w-full bg-zinc-900 border border-white/20 p-3 text-sm text-white focus:outline-none focus:border-white transition-colors rounded-sm" placeholder="Share your plans, date, and what matters most to you..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-4 bg-white text-black text-xs uppercase tracking-[0.25em] font-semibold hover:bg-gray-200 transition-all rounded-sm shadow-lg">
+                    Send Inquiry
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 bg-[#0a0a0a] border-t border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+            
+            <!-- Brand -->
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center">
+                    <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </div>
+                <span class="serif-font tracking-[0.2em] text-base font-medium uppercase">Focus Photography</span>
+            </div>
+
+            <!-- Social Links Placeholder -->
+            <div class="flex items-center space-x-8">
+                <a href="#" class="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Instagram</a>
+                <a href="#" class="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Vogue Weddings</a>
+                <a href="#" class="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Junebug</a>
+                <a href="#" class="text-xs uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors">Pinterest</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-[11px] text-gray-500 tracking-wider">
+                &copy; 2026 Focus Photography. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
